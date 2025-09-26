@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0;url=meatmasterapp://confirmacionpagopaypal" />
-  </head>
-  <body>
-    Holaaa
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirigiendo...</title>
+  <script>
+    window.onload = function () {
+      // Intentamos abrir tu app con el deep link
+      window.location.href = "meatmasterapp://confirmacionpagopaypal";
 
+      // Por si falla (app no instalada), redirigimos a una página fallback
+      setTimeout(function () {
+        window.location.href = "https://arvison.com/fallback";
+      }, 2000);
+    };
+  </script>
+</head>
+<body>
+  <p>Redirigiendo a la aplicación...</p>
+</body>
 </html>
