@@ -1,19 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Abrir app</title>
-</head>
-<body>
-  <p>Haz clic para continuar:</p>
-  <a href="com.ffNC.alexmontielapp://meatmasterapp.com" id="openApp">Abrir Meat Master</a>
-
-  <script>
-    document.getElementById("openApp").onclick = function() {
-      setTimeout(function() {
-        window.location.href = "https://facebook.com/fallback";
-      }, 5000);
-    };
-  </script>
-</body>
+<html>
+  <head><meta charset="UTF-8"><title>Abrir App</title></head>
+  <body>
+    <h2>Prueba Deep Link</h2>
+    <a href="com.ffNC.alexmontielapp://meatmasterapp.com">Abrir mi App</a>
+  </body>
 </html>
