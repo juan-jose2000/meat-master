@@ -2,29 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirigiendo...</title>
-  <script>
-    window.onload = function () {
-      // Intentamos abrir tu app con el deep link
-      window.location.href = "com.ffNC.alexmontielapp://meatmasterapp.com";
+  <title>Abrir app</title>
+</head>
+<body>
+  <p>Haz clic para continuar:</p>
+  <a href="com.ffNC.alexmontielapp://meatmasterapp.com" id="openApp">Abrir Meat Master</a>
 
-      // Por si falla (app no instalada), redirigimos a una página fallback
-      setTimeout(function () {
+  <script>
+    document.getElementById("openApp").onclick = function() {
+      setTimeout(function() {
         window.location.href = "https://facebook.com/fallback";
       }, 5000);
     };
   </script>
-</head>
-<body>
-  <p>Redirigiendo a l...</p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
